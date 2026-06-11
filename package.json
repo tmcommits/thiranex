@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "start": "node server/src/index.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}

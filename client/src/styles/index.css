@@ -1,0 +1,30 @@
+:root{
+  --bg-1:#0a0a1a;
+  --bg-2:#0f0f2e;
+  --violet:#7C3AED;
+  --cyan:#06B6D4;
+  --glass: rgba(255,255,255,0.04);
+}
+html,body,#root{height:100%;}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg,var(--bg-1),var(--bg-2));
+  color:#e6eef8;
+  -webkit-font-smoothing:antialiased;
+}
+.nav{position:sticky;top:0;backdrop-filter:blur(8px);background:var(--glass);border-bottom:1px solid rgba(255,255,255,0.03);}
+.nav-inner{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;}
+.brand{font-weight:700}
+.links a{color:inherit;margin-left:1rem;text-decoration:none}
+.hero{padding:6rem 2rem;text-align:center}
+.gradient-text{background:linear-gradient(90deg,var(--violet),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent;font-size:3rem}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;padding:2rem}
+.card{background:rgba(255,255,255,0.02);padding:1rem;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+.placeholder{height:140px;background:linear-gradient(90deg,#111,#222);border-radius:8px}
+.chip{display:inline-block;padding:0.25rem 0.6rem;border-radius:999px;background:rgba(255,255,255,0.03);margin-right:0.4rem;margin-top:0.4rem;font-size:0.8rem}
+.contact{padding:2rem}
+.contact-form{display:flex;flex-direction:column;gap:0.6rem;max-width:600px}
+.contact-form input, .contact-form textarea{padding:0.8rem;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+button{background:linear-gradient(90deg,var(--violet),var(--cyan));border:none;padding:0.8rem 1rem;border-radius:8px;color:#fff}
+@media (max-width:600px){.nav-inner{padding:0.8rem}}
